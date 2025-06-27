@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffbe9;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 550px;
+  margin: 40px auto;
+  background: #ffe0f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #d2a9e3;
+  padding: 32px 24px;
+  text-align: center;
+}
+h1 {
+  color: #e75480;
+  margin-bottom: 0;
+}
+.name {
+  margin-top: 0;
+  color: #bc6ff1;
+}
+.message {
+  margin: 18px 0;
+  color: #5f5e5e;
+}
+.highlight {
+  color: #dd2c6c;
+  font-weight: 600;
+}
+ul {
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+}
+.gallery {
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.gallery-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid #e75480;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.gallery-photo:hover {
+  transform: scale(1.1);
+}
+.gallery-item {
+  display: inline-block;
+  font-size: 32px;
+  margin: 8px 6px;
+}
+#celebrateBtn {
+  margin: 24px 0 0;
+  padding: 12px 26px;
+  background: #bc6ff1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#celebrateBtn:hover {
+  background: #dd2c6c;
+}
+.signature {
+  margin-top: 28px;
+  color: #636363;
+  font-style: italic;
+}
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+#lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 10px;
+}
